@@ -16,10 +16,10 @@ public class Movimiento : MonoBehaviour
 
     Direction direction;
 
-    
+
     void Start()
     {
-        InvokeRepeating("Move",frameRate,frameRate);
+        InvokeRepeating("Move", frameRate, frameRate);
     }
 
     void Move()
