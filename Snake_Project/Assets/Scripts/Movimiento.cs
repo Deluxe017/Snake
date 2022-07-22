@@ -17,6 +17,10 @@ public class Movimiento : MonoBehaviour
     Direction direction;
 
     public List<Transform> Tail = new List<Transform>();
+    public GameObject TailPrefab;
+
+    public Vector2 horizontalRange;
+    public Vector2 verticalRange;
 
     void Start()
     {
@@ -67,6 +71,16 @@ public class Movimiento : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-     //  if(Collider.CompareTag ("Block"))
+       if(other.CompareTag("Block"))
+        {
+            print("Perdiste");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+
+        }
+       else if (other.CompareTag("Food"))
+        {
+          Tail.Add(Instantiate(TailPrefab, Tail[Tail.Count - 1].position, Quaternion.identity).transform);
+            other.transform.position = new Vector2(Random.Range(horizontalRange.x, horizontalRange.y), Random.Range(verticalRange.x, verticalRange.y));
+        }
     }
 }
