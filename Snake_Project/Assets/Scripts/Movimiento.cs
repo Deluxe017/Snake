@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Movimiento : MonoBehaviour
 {
+    [Header("Velocidad de movimiento")]
     public float frameRate = 0.2f;
-    public float step = 0.16f;
+    public float step = 0.30f;
+
     enum Direction
     {
         up,
@@ -74,13 +78,13 @@ public class Movimiento : MonoBehaviour
        if(other.CompareTag("Block"))
         {
             print("Perdiste");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
 
         }
        else if (other.CompareTag("Food"))
-        {
+       {
           Tail.Add(Instantiate(TailPrefab, Tail[Tail.Count - 1].position, Quaternion.identity).transform);
-            other.transform.position = new Vector2(Random.Range(horizontalRange.x, horizontalRange.y), Random.Range(verticalRange.x, verticalRange.y));
-        }
+          other.transform.position = new Vector2(Random.Range(horizontalRange.x, horizontalRange.y), Random.Range(verticalRange.x, verticalRange.y));
+       }
     }
 }
