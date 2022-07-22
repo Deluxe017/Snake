@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Apples
+  - Block
+  - Food
   layers:
   - Default
   - TransparentFX

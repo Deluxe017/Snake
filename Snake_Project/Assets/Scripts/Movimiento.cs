@@ -16,6 +16,7 @@ public class Movimiento : MonoBehaviour
 
     Direction direction;
 
+    public List<Transform> Tail = new List<Transform>();
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class Movimiento : MonoBehaviour
 
     void Move()
     {
+        lastPos = transform.position;
+
         Vector3 nextPos = Vector3.zero;
         if (direction == Direction.up)
             nextPos = Vector3.up;
@@ -36,8 +39,19 @@ public class Movimiento : MonoBehaviour
         nextPos *= step;
         transform.position += nextPos;
 
+        MoveTail();
     }
 
+    Vector3 lastPos;
+    void MoveTail()
+    {
+        for (int i = 0; i < Tail.Count; i++)
+        {
+            Vector3 temp = Tail[i].position;
+            Tail[i].position = lastPos;
+            lastPos = temp;
+        }
+    }
 
     void Update()
     {
@@ -49,5 +63,10 @@ public class Movimiento : MonoBehaviour
             direction = Direction.left;
         else if (Input.GetKeyDown(KeyCode.RightArrow))
             direction = Direction.right;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+     //  if(Collider.CompareTag ("Block"))
     }
 }
