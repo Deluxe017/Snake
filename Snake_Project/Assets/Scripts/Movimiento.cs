@@ -74,6 +74,7 @@ public class Movimiento : MonoBehaviour
             direction = Direction.left;
         else if (Input.GetKeyDown(KeyCode.RightArrow))
             direction = Direction.right;
+                
     }
 
     private void OnTriggerEnter(Collider other)
