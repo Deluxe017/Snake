@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 537610152}
   - component: {fileID: 537610151}
   m_Layer: 5
-  m_Name: Exit Button
+  m_Name: Menu Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,7 +463,7 @@ RectTransform:
   m_GameObject: {fileID: 537610149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.94697, y: 0.94697, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977384430}
@@ -471,8 +471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -256}
-  m_SizeDelta: {x: 410, y: 121}
+  m_AnchoredPosition: {x: 258, y: -163}
+  m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537610151
 MonoBehaviour:
@@ -520,7 +520,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 977384431}
         m_TargetAssemblyTypeName: Menu_Inicial, Assembly-CSharp
-        m_MethodName: Salir
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7a7bba245e526646a2ad0d2e0a3459f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e07962c355e405145a4732703cbf3055, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 736455881}
   - component: {fileID: 736455880}
   m_Layer: 5
-  m_Name: Start Button
+  m_Name: Restart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,7 +675,7 @@ RectTransform:
   m_GameObject: {fileID: 736455878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.94697, y: 0.94697, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977384430}
@@ -683,8 +683,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 410, y: 121}
+  m_AnchoredPosition: {x: -238, y: -158}
+  m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &736455880
 MonoBehaviour:
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b2ffc16dd83feb45a89f74a0ea57d22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e5622ae871e6054480581f408882d1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 768786959}
   - component: {fileID: 768786958}
   m_Layer: 5
-  m_Name: Fondo_Menu.I
+  m_Name: Fondo Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -871,7 +871,7 @@ GameObject:
   - component: {fileID: 977384431}
   - component: {fileID: 977384432}
   m_Layer: 5
-  m_Name: Menu_Principal(Canvas)
+  m_Name: Menu_Game Over(Canvas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 1044917904}
   - component: {fileID: 1044917903}
   m_Layer: 5
-  m_Name: Tittle Game
+  m_Name: Game Over Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1107,7 +1107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121, y: 329}
+  m_AnchoredPosition: {x: 121, y: 283}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044917903
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SPACE SNAKE
+  m_text: GAME OVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5ff8621b1587314dbce20ae43578152, type: 2}
   m_sharedMaterial: {fileID: -3872068900052712064, guid: f5ff8621b1587314dbce20ae43578152, type: 2}
@@ -1157,8 +1157,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
