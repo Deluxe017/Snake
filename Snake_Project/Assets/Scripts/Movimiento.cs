@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Movimiento : MonoBehaviour
 {
     [Header("Velocidad de movimiento")]
     public float frameRate = 0.2f;
-    public float step = 0.30f;
+    public float step = 0.25f;
 
     enum Direction
     {
@@ -25,6 +26,8 @@ public class Movimiento : MonoBehaviour
 
     public Vector2 horizontalRange;
     public Vector2 verticalRange;
+
+    public int score = 100;
 
     void Start()
     {
@@ -83,8 +86,10 @@ public class Movimiento : MonoBehaviour
         }
        else if (other.CompareTag("Food"))
        {
+            ScoreUI.score += score;
           Tail.Add(Instantiate(TailPrefab, Tail[Tail.Count - 1].position, Quaternion.identity).transform);
           other.transform.position = new Vector2(Random.Range(horizontalRange.x, horizontalRange.y), Random.Range(verticalRange.x, verticalRange.y));
+          
        }
     }
 }
