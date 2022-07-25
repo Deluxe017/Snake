@@ -1,25 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ScoreUI : MonoBehaviour
 {
-    private float puntos;
+    public static int score = 0;
+    public string scoreText = "Score";
 
-    private TextMeshProUGUI textMesh;
+    public TextMeshProUGUI textScore;
+    public static ScoreUI gameScore;
+
+    private void Awake()
+    {
+        gameScore = this;
+    }
 
     private void Start()
     {
-        textMesh = GetComponent<TextMeshProUGUI>();
+        score = 0;
     }
-    private void Update()
+
+    void Update()
     {
-        puntos += Time.deltaTime;
-        textMesh.text = puntos.ToString("0");
-    }
-    public void SumarPuntos(float puntosEntrada)
-    {
-        puntos += puntosEntrada;
+        if (textScore != null)
+        {
+            textScore.text = scoreText + score.ToString();
+        }
     }
 }
