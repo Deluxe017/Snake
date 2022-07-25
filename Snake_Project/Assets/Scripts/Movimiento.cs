@@ -82,7 +82,7 @@ public class Movimiento : MonoBehaviour
        if(other.CompareTag("Block"))
         {
             print("Perdiste");
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("Game_Over");
 
         }
        else if (other.CompareTag("Food"))

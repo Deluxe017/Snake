@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0255ee5c75403354dba6ec7f1b15897d
+guid: 91d3be2bedf09264096a7510665931a9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +126,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 183
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5683ca3ff81a64fa8d9e0118592bcb
+      internalID: -751529065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 183
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f30d49197247af418db6328b45c6f29
+      internalID: -2008014690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_2
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 183
+        width: 211
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6acf53959b154240b2071b220d9e987
+      internalID: -1487845202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_3
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 183
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785f4d4550731d469e9ba006fa2e84f
+      internalID: -1112011532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 183
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde9c327c7585f44b98e160afb2572f
+      internalID: -1810592640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planetas_Pixel_Art_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 16
+        width: 702
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64fa821e5bbc3c4085fc6323cf97eee
+      internalID: 1312570668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,7 +263,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planetas_Pixel_Art_1: -2008014690
+      Planetas_Pixel_Art_3: -1112011532
+      Planetas_Pixel_Art_4: -1810592640
+      Planetas_Pixel_Art_0: -751529065
+      Planetas_Pixel_Art_2: -1487845202
+      Planetas_Pixel_Art_5: 1312570668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
