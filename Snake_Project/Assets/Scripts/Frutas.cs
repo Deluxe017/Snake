@@ -11,7 +11,7 @@ public class Frutas : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            puntaje.SumarPuntos(cantidadPuntos);
+            //puntaje.SumarPuntos(cantidadPuntos);
         }
     }
 }
